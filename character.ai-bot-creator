@@ -1,0 +1,45 @@
+sc = "_"
+####################
+#LISTA DA PERSONALIDADE DO PERSONAGEM
+pers = input("Descreva a personalidade com palavras únicas ou divididas por snakecases: ")
+lista_pers = pers.split()
+lista_persf = [string.replace("_", " ") for string in lista_pers]
+
+####################
+#LISTA DE COMO É A APARENCIA DO PERSONAGEM
+apa = input("Descreva a aparência (cabelo, altura) com palavras únicas ou divididas por snakecases: ")
+lista_apa = apa.split()
+lista_apaf = [string.replace("_", " ") for string in lista_apa]
+
+####################
+# LISTA DE COMO O PERSONAGEM SE VESTE:
+roup = input("Descreva a roupa que x personagem usa com palavras únicas ou divididas por snakecases: ")
+lista_roup = roup.split()
+lista_roupf = [string.replace("_", " ") for string in lista_roup]
+
+####################
+# LISTA DE O QUE O PERSONAGEM GOSTA:
+likes = input("O que o personagem gosta? Palavras únicas ou divididas por snakecases: ")
+lista_likes = likes.split()
+lista_likesf = [string.replace("_", " ") for string in lista_likes]
+
+###################
+#LISTA DO QUE O PERSONAGEM NÃO GOSTA
+hates = input("O que o personagem não gosta/odeia? Escreva em palavras únicas ou divididas por snakecases: ")
+lista_hates = hates.split()
+lista_hatesf = [string.replace("_", " ") for string in lista_hates]
+
+###################
+#LISTA DAS CARACTERÍSTICAS DE SEU PERSONAGEM
+carac = input("Alguma característica marcante do seu personagem? Escreva em palavras únicas ou divididas por snakecases: ")
+lista_carac = carac.split()
+lista_caracf = [string.replace("_", " ") for string in lista_carac]
+
+###################
+
+print('PERSONALIDADE: {}'.format(lista_persf))
+print('APARÊNCIA: {}'.format(lista_apaf))
+print('ROUPAS: {}'.format(lista_roupf))
+print('GOSTA DE: {}'.format(lista_likesf))
+print('ODEIA/NÃO GOSTA: {}'.format(lista_hatesf))
+print('CARACTERÍSTICAS MARCANTES: {}'.format(lista_caracf))
